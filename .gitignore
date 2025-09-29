@@ -1,3 +1,5 @@
 /.vs
+/int
+/out
 
 *.vcxproj.user
