@@ -1,6 +1,7 @@
 /.vs
 /int
 /out
+/build
 /GTests/int
 /GTests/out
 /packages
