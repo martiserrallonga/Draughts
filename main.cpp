@@ -40,6 +40,10 @@ void printBoard() {
 }
 
 void movePawn(int from, int to) {
+	// from == to
+	// from == '.'
+	// to is ocupied
+	// currentPlayer != from
 	board.at(to) = board.at(from);
 	board.at(from) = '.';
 }
