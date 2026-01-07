@@ -10,7 +10,7 @@
 class Scene : public IDrawable {
 public:
     Scene() {
-        std::unique_ptr<IDrawable> board = std::make_unique<Board>();
+        std::unique_ptr<IDrawable> board = std::make_unique<Board>(600, 600);
         drawables.push_back(std::move(board));
     }
 
