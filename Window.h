@@ -6,7 +6,7 @@ static constexpr int kTargetFPS = 60;
 
 class Window {
 public:
-	friend class Scene;
+	friend class Board;
 
 	Window(std::string title, int width, int height)
 		: width(width)
@@ -24,6 +24,4 @@ private:
 	std::string title;
 	int width;
 	int height;
-
 };
-

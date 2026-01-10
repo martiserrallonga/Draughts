@@ -105,11 +105,21 @@ void game() {
 #include "raylib.h"
 #include "Scene.h"
 #include "Window.h"
+#include "GameState.h"
+
+static constexpr const char* kTitle = "Draughts";
+static constexpr int kWidth = 640;
+static constexpr int kHeight = 640;
 
 int main() {
-	Window window("Draughts", 640, 640);
+	Window window(kTitle, kWidth, kHeight);
 
-	Scene scene(window);
+	auto board = std::make_unique<Board>(window);
+	GameState gameState(board.get());
+	
+	Scene scene;
+	scene.add(std::move(board));
+
 	while (!WindowShouldClose()) {
 		scene.draw();
 	}
