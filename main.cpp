@@ -104,18 +104,13 @@ void game() {
 
 #include "raylib.h"
 #include "Scene.h"
+#include "Window.h"
 
 int main() {
-	Scene scene;
+	Window window("Draughts", 640, 640);
 
-	InitWindow(640, 640, "Draughts");
-	SetTargetFPS(60);
-
+	Scene scene(window);
 	while (!WindowShouldClose()) {
-		BeginDrawing();
 		scene.draw();
-		EndDrawing();
 	}
-
-	CloseWindow();
 }
