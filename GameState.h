@@ -6,17 +6,15 @@
 
 class GameState {
 public:
-	GameState(Board* board)
+	GameState(Board* board, Player* current, Player* next)
 		: board(board)
+		, currentPlayer(current)
+		, nextPlayer(next)
 	{
-	}
-
-	void switchPlayer() {
-		currentPlayer.swap(nextPlayer);
 	}
 
 private:
 	Board* board;
-	std::shared_ptr<Player> currentPlayer;
-	std::shared_ptr<Player> nextPlayer;
+	Player* currentPlayer;
+	Player* nextPlayer;
 };

@@ -75,7 +75,7 @@ void capture(int from, int jump, int to) {
 void switchPlayer(char player) {
 	if (currentPlayer == player)
 		std::cout << "ERROR: Current player is already " << player << std::endl;
-	
+
 	currentPlayer = player;
 }
 
@@ -115,10 +115,14 @@ int main() {
 	Window window(kTitle, kWidth, kHeight);
 
 	auto board = std::make_unique<Board>(window);
-	GameState gameState(board.get());
-	
+	auto player1 = std::make_unique<Player>();
+	auto player2 = std::make_unique<Player>();
+	GameState gameState(board.get(), player1.get(), player2.get());
+
 	Scene scene;
 	scene.add(std::move(board));
+	scene.add(std::move(player1));
+	scene.add(std::move(player2));
 
 	while (!WindowShouldClose()) {
 		scene.draw();
