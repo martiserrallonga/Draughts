@@ -7,6 +7,7 @@
 
 #include <vector>
 
+class Piece;
 
 static constexpr int kCellsPerRow = 8;
 static constexpr int kCellNumber = 64;
@@ -22,6 +23,8 @@ public:
 
 		Draw::RectangleLines(rectangle, DARKBROWN);
 	}
+
+	void addPiece(Piece* piece, int index);
 
 private:
 	Rectangle rectangle;

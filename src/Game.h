@@ -20,6 +20,19 @@ public:
 		player2 = std::make_unique<Player>();
 		gameState = GameState(board.get(), player1.get(), player2.get());
 
+		float pieceRadius = 640.f / 16.f * 0.8f;
+		Color whiteColorLight = { 250.f, 220.f, 180.f, 255.f };
+		Color whiteColorDark = { 245.f, 195.f, 130.f, 255.f };
+		Color blackColorLight = { 50.f, 50.f, 50.f, 255.f };
+		Color blackColorDark = { 40.f, 40.f, 40.f, 255.f };
+
+		PieceModel whitePieces(pieceRadius, whiteColorLight, whiteColorDark);
+		PieceModel blackPieces(pieceRadius, blackColorLight, blackColorDark);
+		player1->setPieceModel(whitePieces);
+		player2->setPieceModel(blackPieces);
+
+		gameState.setStartState();
+
 		scene.add(board.get());
 		scene.add(player1.get());
 		scene.add(player2.get());
@@ -42,6 +55,10 @@ public:
 
 	static const Window& GetWindow() {
 		return Get().window;
+	}
+
+	static Board* GetBoard() {
+		return Get().board.get();
 	}
 
 private:

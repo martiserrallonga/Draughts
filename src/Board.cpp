@@ -1,5 +1,6 @@
 #include "Board.h"
 #include "Game.h"
+#include "Piece.h"
 
 Board::Board() {
 	const Window& window = Game::GetWindow();
@@ -22,6 +23,10 @@ Board::Board() {
 		cellRect.height = cellHeight;
 
 		Color color = (col + row) % 2 == 0 ? LIGHTGRAY : DARKBROWN;
-		cells.emplace_back(std::make_unique<Cell>(cellRect, color));
+		cells.emplace_back(std::make_unique<Cell>(index, cellRect, color));
 	}
+}
+
+void Board::addPiece(Piece* piece, int index) {
+	cells.at(index)->setPiece(piece);
 }

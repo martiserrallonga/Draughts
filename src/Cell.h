@@ -3,23 +3,24 @@
 #include "Entity.h"
 
 #include "raylib.h"
-
 #include <memory>
+
+class Piece;
 
 class Cell : public IEntity, public IDrawable {
 public:
-    Cell(Rectangle rect, Color color) noexcept
-        : rectangle(std::move(rect))
-        , color(std::move(color))
-    {
-    }
+	Cell(int index, Rectangle rect, Color color) noexcept;
 
-    void draw() const noexcept override {
-        DrawRectangleRec(rectangle, color);
-    }
+	void draw() const noexcept override;
+
+	int getIndex();
+	void setPiece(Piece* aPiece);
 
 private:
-    Rectangle rectangle;
-    Color color;
+	int index;
+	Piece* piece = nullptr;
+
+	Rectangle rectangle;
+	Color color;
 };
 

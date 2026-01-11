@@ -22,6 +22,9 @@
     <Filter Include="Archivos de encabezado\Utils">
       <UniqueIdentifier>{5d9e48c4-5e7e-4600-bff3-fff510a452e1}</UniqueIdentifier>
     </Filter>
+    <Filter Include="Archivos de encabezado\Models">
+      <UniqueIdentifier>{da7532aa-1a44-4fd1-b452-e192d9848b06}</UniqueIdentifier>
+    </Filter>
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="src\Board.cpp">
@@ -89,6 +92,9 @@
     </ClInclude>
     <ClInclude Include="src\DrawUtils.h">
       <Filter>Archivos de encabezado\Utils</Filter>
+    </ClInclude>
+    <ClInclude Include="src\PieceModel.h">
+      <Filter>Archivos de encabezado\Models</Filter>
     </ClInclude>
   </ItemGroup>
 </Project>
