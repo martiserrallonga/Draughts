@@ -155,26 +155,26 @@
     </Link>
   </ItemDefinitionGroup>
   <ItemGroup>
-    <ClCompile Include="Board.cpp" />
-    <ClCompile Include="Cell.cpp" />
-    <ClCompile Include="GameState.cpp" />
-    <ClCompile Include="main.cpp" />
-    <ClCompile Include="Piece.cpp" />
-    <ClCompile Include="Player.cpp" />
-    <ClCompile Include="Scene.cpp" />
-    <ClCompile Include="Window.cpp" />
+    <ClCompile Include="src\Board.cpp" />
+    <ClCompile Include="src\Cell.cpp" />
+    <ClCompile Include="src\GameState.cpp" />
+    <ClCompile Include="src\main.cpp" />
+    <ClCompile Include="src\Piece.cpp" />
+    <ClCompile Include="src\Player.cpp" />
+    <ClCompile Include="src\Scene.cpp" />
+    <ClCompile Include="src\Window.cpp" />
   </ItemGroup>
   <ItemGroup>
-    <ClInclude Include="Board.h" />
-    <ClInclude Include="Cell.h" />
-    <ClInclude Include="GameState.h" />
-    <ClInclude Include="Drawable.h" />
-    <ClInclude Include="Entity.h" />
-    <ClInclude Include="InputHandler.h" />
-    <ClInclude Include="Piece.h" />
-    <ClInclude Include="Player.h" />
-    <ClInclude Include="Scene.h" />
-    <ClInclude Include="Window.h" />
+    <ClInclude Include="src\Board.h" />
+    <ClInclude Include="src\Cell.h" />
+    <ClInclude Include="src\Drawable.h" />
+    <ClInclude Include="src\Entity.h" />
+    <ClInclude Include="src\GameState.h" />
+    <ClInclude Include="src\InputHandler.h" />
+    <ClInclude Include="src\Piece.h" />
+    <ClInclude Include="src\Player.h" />
+    <ClInclude Include="src\Scene.h" />
+    <ClInclude Include="src\Window.h" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">

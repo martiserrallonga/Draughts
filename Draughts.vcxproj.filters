@@ -21,58 +21,58 @@
     </Filter>
   </ItemGroup>
   <ItemGroup>
-    <ClCompile Include="GameState.cpp">
+    <ClCompile Include="src\Board.cpp">
       <Filter>Archivos de origen</Filter>
     </ClCompile>
-    <ClCompile Include="Board.cpp">
+    <ClCompile Include="src\Cell.cpp">
       <Filter>Archivos de origen</Filter>
     </ClCompile>
-    <ClCompile Include="Player.cpp">
+    <ClCompile Include="src\GameState.cpp">
       <Filter>Archivos de origen</Filter>
     </ClCompile>
-    <ClCompile Include="Scene.cpp">
+    <ClCompile Include="src\Piece.cpp">
       <Filter>Archivos de origen</Filter>
     </ClCompile>
-    <ClCompile Include="Piece.cpp">
+    <ClCompile Include="src\Player.cpp">
       <Filter>Archivos de origen</Filter>
     </ClCompile>
-    <ClCompile Include="Cell.cpp">
+    <ClCompile Include="src\Scene.cpp">
       <Filter>Archivos de origen</Filter>
     </ClCompile>
-    <ClCompile Include="main.cpp" />
-    <ClCompile Include="Window.cpp">
+    <ClCompile Include="src\Window.cpp">
       <Filter>Archivos de origen</Filter>
     </ClCompile>
+    <ClCompile Include="src\main.cpp" />
   </ItemGroup>
   <ItemGroup>
-    <ClInclude Include="GameState.h">
+    <ClInclude Include="src\Board.h">
+      <Filter>Archivos de encabezado\Drawables</Filter>
+    </ClInclude>
+    <ClInclude Include="src\Piece.h">
+      <Filter>Archivos de encabezado\Drawables</Filter>
+    </ClInclude>
+    <ClInclude Include="src\Scene.h">
+      <Filter>Archivos de encabezado\Drawables</Filter>
+    </ClInclude>
+    <ClInclude Include="src\Cell.h">
+      <Filter>Archivos de encabezado\Drawables</Filter>
+    </ClInclude>
+    <ClInclude Include="src\Entity.h">
+      <Filter>Archivos de encabezado\Interfaces</Filter>
+    </ClInclude>
+    <ClInclude Include="src\InputHandler.h">
+      <Filter>Archivos de encabezado\Interfaces</Filter>
+    </ClInclude>
+    <ClInclude Include="src\Drawable.h">
+      <Filter>Archivos de encabezado\Interfaces</Filter>
+    </ClInclude>
+    <ClInclude Include="src\Player.h">
       <Filter>Archivos de encabezado</Filter>
     </ClInclude>
-    <ClInclude Include="Player.h">
+    <ClInclude Include="src\Window.h">
       <Filter>Archivos de encabezado</Filter>
     </ClInclude>
-    <ClInclude Include="Drawable.h">
-      <Filter>Archivos de encabezado\Interfaces</Filter>
-    </ClInclude>
-    <ClInclude Include="Entity.h">
-      <Filter>Archivos de encabezado\Interfaces</Filter>
-    </ClInclude>
-    <ClInclude Include="InputHandler.h">
-      <Filter>Archivos de encabezado\Interfaces</Filter>
-    </ClInclude>
-    <ClInclude Include="Piece.h">
-      <Filter>Archivos de encabezado\Drawables</Filter>
-    </ClInclude>
-    <ClInclude Include="Board.h">
-      <Filter>Archivos de encabezado\Drawables</Filter>
-    </ClInclude>
-    <ClInclude Include="Scene.h">
-      <Filter>Archivos de encabezado\Drawables</Filter>
-    </ClInclude>
-    <ClInclude Include="Cell.h">
-      <Filter>Archivos de encabezado\Drawables</Filter>
-    </ClInclude>
-    <ClInclude Include="Window.h">
+    <ClInclude Include="src\GameState.h">
       <Filter>Archivos de encabezado</Filter>
     </ClInclude>
   </ItemGroup>
