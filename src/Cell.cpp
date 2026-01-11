@@ -1,25 +1,25 @@
 #include "Cell.h"
 #include "Piece.h"
 
-Cell::Cell(int index, Rectangle rect, Color color) noexcept
+Cell::Cell(int index, Rectangle rect, Color color)
 	: index(index)
 	, rectangle(rect)
 	, color(color)
 {
 }
 
-void Cell::draw() const noexcept {
+void Cell::draw() const {
 	DrawRectangleRec(rectangle, color);
 }
 
-int Cell::getIndex() {
+int Cell::getIndex() const noexcept {
 	return index;
 }
 
 void Cell::setPiece(Piece* aPiece) {
 	piece = aPiece;
 
-	Vector2 cellCenter{
+	const Vector2 cellCenter{
 		rectangle.x + rectangle.width / 2.f,
 		rectangle.y + rectangle.height / 2.f
 	};

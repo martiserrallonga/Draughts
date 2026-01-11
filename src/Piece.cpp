@@ -13,8 +13,8 @@ Piece::Piece(const Player* player)
 
 void Piece::draw() const {
 	DrawCircleV(position, model.radius, model.colorLight);
-	DrawCircleV(position, model.radius * 0.8, model.colorDark);
-	DrawCircleV(position, model.radius * 0.6, model.colorLight);
+	DrawCircleV(position, model.radius * 0.8f, model.colorDark);
+	DrawCircleV(position, model.radius * 0.6f, model.colorLight);
 }
 
 void Piece::onClick() {

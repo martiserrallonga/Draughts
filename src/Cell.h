@@ -9,11 +9,11 @@ class Piece;
 
 class Cell : public IEntity, public IDrawable {
 public:
-	Cell(int index, Rectangle rect, Color color) noexcept;
+	Cell(int index, Rectangle rect, Color color);
 
-	void draw() const noexcept override;
+	void draw() const override;
 
-	int getIndex();
+	int getIndex() const noexcept;
 	void setPiece(Piece* aPiece);
 
 private:

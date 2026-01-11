@@ -20,14 +20,14 @@ public:
 		player2 = std::make_unique<Player>();
 		gameState = GameState(board.get(), player1.get(), player2.get());
 
-		float pieceRadius = 640.f / 16.f * 0.8f;
-		Color whiteColorLight = { 250.f, 220.f, 180.f, 255.f };
-		Color whiteColorDark = { 245.f, 195.f, 130.f, 255.f };
-		Color blackColorLight = { 50.f, 50.f, 50.f, 255.f };
-		Color blackColorDark = { 40.f, 40.f, 40.f, 255.f };
-
-		PieceModel whitePieces(pieceRadius, whiteColorLight, whiteColorDark);
-		PieceModel blackPieces(pieceRadius, blackColorLight, blackColorDark);
+		constexpr float pieceRadius = 640.f / 16.f * 0.8f;
+		const Color whiteColorLight = { 250, 220, 180, 255 };
+		const Color whiteColorDark = { 245, 195, 130, 255 };
+		const Color blackColorLight = { 50, 50, 50, 255 };
+		const Color blackColorDark = { 40, 40, 40, 255 };
+		
+		const PieceModel whitePieces(pieceRadius, whiteColorLight, whiteColorDark);
+		const PieceModel blackPieces(pieceRadius, blackColorLight, blackColorDark);
 		player1->setPieceModel(whitePieces);
 		player2->setPieceModel(blackPieces);
 
