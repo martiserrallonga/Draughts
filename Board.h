@@ -19,8 +19,8 @@ public:
 		rectangle.width = window.width * (1.f - kWindowMargin);
 		rectangle.height = window.height * (1.f - kWindowMargin);
 
-		float cellWidth = rectangle.width / static_cast<float>(kCellsPerRow);
-		float cellHeight = rectangle.height / static_cast<float>(kCellsPerRow);
+		const float cellWidth = rectangle.width / static_cast<float>(kCellsPerRow);
+		const float cellHeight = rectangle.height / static_cast<float>(kCellsPerRow);
 
 		for (int index = 0; index < kCellNumber; ++index) {
 			const int col = index % kCellsPerRow;
