@@ -5,6 +5,8 @@
 #include "Window.h"
 #include "GameState.h"
 
+#include "raylib.h"
+
 #include <memory>
 #include <vector>
 

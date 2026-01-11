@@ -2,6 +2,8 @@
 #include "Drawable.h"
 #include "Entity.h"
 
+#include "raylib.h"
+
 #include <memory>
 
 class Cell : public IEntity, public IDrawable {
