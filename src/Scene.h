@@ -14,7 +14,7 @@ class Scene : public IDrawable {
 public:
 	void draw() const override {
 		BeginDrawing();
-		ClearBackground(SKYBLUE);
+		ClearBackground(RAYWHITE);
 
 		for (const auto& entity : drawables)
 			entity->draw();

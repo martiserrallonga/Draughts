@@ -14,8 +14,7 @@ class Game {
 public:
 	Game() : window(kTitle, kWidth, kHeight) {}
 
-	void initialize()
-	{
+	void initialize() {
 		board = std::make_unique<Board>();
 		player1 = std::make_unique<Player>();
 		player2 = std::make_unique<Player>();

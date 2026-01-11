@@ -3,6 +3,7 @@
 #include "Entity.h"
 #include "Cell.h"
 #include "Window.h"
+#include "DrawUtils.h"
 
 #include <vector>
 
@@ -18,6 +19,8 @@ public:
 	void draw() const override {
 		for (const auto& cell : cells)
 			cell->draw();
+
+		Draw::RectangleLines(rectangle, DARKBROWN);
 	}
 
 private:
