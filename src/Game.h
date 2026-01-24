@@ -29,7 +29,7 @@ public:
 		const PieceModel whitePieces(pieceRadius, whiteColorLight, whiteColorDark);
 		const PieceModel blackPieces(pieceRadius, blackColorLight, blackColorDark);
 		player1->setPieceModel(whitePieces);
-		player2->setPieceModel(blackPieces);
+		//player2->setPieceModel(blackPieces);
 
 		gameState.setStartState();
 
